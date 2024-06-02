@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="website.css" />
+  <link rel="stylesheet" href="portfolio.js" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="head">
+    <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><a href="">EDPROG</a></h1>
+    <div class="menu" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
+      <a href="#">Home</a>
+      <a href="#aboutus">About</a>
+      <a href="#pnc">PnC</a>
+      <a href="#works">Works</a>
+      <a href="Schedule.html">Schedule</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left" data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+      <h3>
+        Hi, my name is <span>Fitzgerald A. Eduarte </span> <br />
+        A Computer Science Student
+      </h3>
+    </div>
+    <div class="right" data-aos="fade-left" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+      <img src="edu.jpg" alt="edu" />
+    </div>
+    <div id="aboutus">
+    </div>
+  </div>
+
+  <div class="slides">
+    <div class="carousel">
+      <div class="slider">
+        <section>
+          <h1 data-aos="fade-down" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">About Me
+          </h1>
+          <img data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out"
+            src="edugawa.jpg" alt="About Me" />
+          <div class="aboutme">
+            <p data-aos="fade-up" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              natus animi in nisi repudiandae vero magnam ullam voluptates
+              alias accusantium vel nemo, illo obcaecati quod quae fugit et
+              saepe odit!
+            </p>
+          </div>
+        </section>
+        <section>
+          <h1 data-aos="fade-down" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">Hobbies
+          </h1>
+          <video data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out"
+            autoplay muted loop src="GenshinImpact 2024-05-16 16-02-29-549.mp4"></video>
+          <div class="aboutme2">
+            <p data-aos="fade-up" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+              quod quo. Iure quas ipsa rem! Eius minus ipsa accusamus porro?
+              Tempore minima nam nisi saepe ducimus consequuntur illo sit
+              aperiam.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h1 data-aos="fade-down" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">My
+            Socials</h1>
+          <table>
+            <tr data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+              <td><a href="https://www.facebook.com/Fitz12042004" target="_blank" class="social-icon"><i
+                    class='bx bxl-facebook'></i>
+                  <p>facebook</p>
+                </a></td>
+              <td><a href="https://www.instagram.com/ztifedz/" target="_blank" class="social-icon"><i
+                    class='bx bxl-instagram'></i>
+                  <p>instagram</p>
+                </a></td>
+              <td><a href="https://x.com/YuiTakata1" target="_blank" class="social-icon"><i class='bx bxl-twitter'></i>
+                  <p>twitter</p>
+                </a></td>
+            </tr>
+            <tr data-aos="fade-left" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+              <td><a href="https://www.tiktok.com/@yui_takata?lang=en" target="_blank" class="social-icon"><i
+                    class='bx bxl-tiktok'></i>
+                  <p>tiktok</p>
+                </a></td>
+              <td><a href="https://www.youtube.com/channel/UCxneb0jCkxktU_6-h212xeA" target="_blank"
+                  class="social-icon"><i class='bx bxl-youtube'></i>
+                  <p>youtube</p>
+                </a></td>
+              <td><a href="https://github.com/ztifff" target="_blank" class="social-icon"><i class='bx bxl-github'></i>
+                  <p>github</p>
+                </a></td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <div class="navigation" id="pnc">
+        <span class="arrow left"><i class="bx bx-chevron-left"></i></span>
+        <span class="arrow right"><i class="bx bx-chevron-right"></i></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    const slider = document.querySelector('.slider');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+
+    var sectionIndex = 0;
+
+    leftArrow.addEventListener("click", function () {
+      sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 2;
+      slider.style.transform = 'translate(' + (sectionIndex) * -33.33 + '%)';
+    });
+    rightArrow.addEventListener('click', function () {
+      sectionIndex = (sectionIndex < 2) ? sectionIndex + 1 : 0;
+      slider.style.transform = 'translate(' + (sectionIndex) * -33.33 + '%)';
+    });</script>
+
+  <div class="Pnc">
+    <h1 data-aos="fade-down" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">PnC
+      Mission/Vision</h1>
+  </div>
+  <div class="pncbody">
+    <table>
+      <thead data-aos="fade-down" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+        <th>
+          <h1>Mission</h1>
+        </th>
+        <th>
+          <h1>Vision</h1>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+            <p>An institution of higher learning committed to equip individuals
+              with knowledge, skills and values that will enable them to achieve
+              professional goals & provide leadership and service for national
+              development.</p>
+          </td>
+          <td data-aos="fade-left" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+            <p>An institution of higher learning, developing globally-competitive
+              and value-laden professionals and leaders instrumental to
+              community development and nation building.</p>
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+  </div>
+  <div class="works" id="works">
+    <h1 data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">Works</h1>
+  </div>
+  <div class="workbody">
+    <div class="pre" data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+      <a href="prelim.html">
+        <i class='bx bxs-folder-open bx-tada-hover'></i>
+        <h1>Prelim</h1>
+      </a>
+    </div>
+    <div class="mid" data-aos="fade-up" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+      <a href="midterm.html">
+        <i class='bx bxs-folder-open bx-tada-hover'></i>
+        <h1>Midterm</h1>
+      </a>
+    </div>
+    <div class="final" data-aos="fade-left" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+      <a href="finals.html">
+        <i class='bx bxs-folder-open bx-tada-hover'></i>
+        <h1>Finals</h1>
+      </a>
+    </div>
+  </div>
+  <div class="footerhead">
+
+  </div>
+  <div class="footer">
+    <div class="content">
+      <p>
+        2024 © All Rights Reserved | Designed and Developed by
+        Travellers.inc | Contact us: 09914810919
+      </p>
+      <div class="footericons">
+        <a href="https://www.instagram.com/ztifedz/"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://www.facebook.com/Fitz12042004"><i class="bx bxl-facebook"></i></a>
+        <a href="https://x.com/YuiTakata1"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCxneb0jCkxktU_6-h212xeA"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

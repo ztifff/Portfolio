@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Gafata&family=Forum&family=Fredericka+the+Great&family=Fugaz+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px 20px 10px;
+  position: fixed;
+  background-color: black;
+  z-index: 99;
+}
+.head a {
+  color: red;
+}
+.head h1 {
+  font-size: 32px;
+  font-family: "Fredericka the Great";
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+.menu a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+  font-family: "Forum";
+  transition: 0.2s;
+}
+.menu a:hover {
+  color: lightblue;
+}
+.container {
+  padding: 285px 30px 285px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  color: white;
+  background-color: rgb(36, 36, 36);
+}
+.left h3 {
+  font-size: 40px;
+  font-weight: 50;
+  font-family: "Fugaz One";
+}
+.left span {
+  color: red;
+}
+.right img {
+  height: 345px;
+  width: 345px;
+  border-radius: 200px;
+  border: 5px solid red;
+  box-shadow: 14px 14px 8px rgba(0, 0, 0, 0.2);
+}
+#aboutus {
+  background-color: rgb(36, 36, 36) ;
+}
+.slides {
+  width: 100%;
+  margin: 0 auto;
+}
+.carousel {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.slider {
+  height: 100%;
+  display: flex;
+  width: 300%;
+  transition: all 0.3s;
+}
+
+.slider section {
+  flex-basis: 100%;
+  display: flex;
+  background-color: rgba(58, 57, 57, 1);
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.slider h1 {
+  position: absolute;
+  top: 0;
+  color: red;
+  font-family: "Forum";
+  font-size: 44px;
+  font-weight: 50;
+}
+.slider img {
+  width: 200px;
+  height: 300px;
+  border-radius: 50px;
+}
+.slider video {
+  width: 400px;
+  height: 350px;
+  border-radius: 200px;
+}
+
+.aboutme,
+.aboutme2,
+.aboutme3 {
+  width: 500px;
+  height: 300px;
+  background-color: rgba(58, 57, 57, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 60px;
+}
+.arrow.left {
+  left: 15px;
+}
+.arrow.right {
+  right: 15px;
+}
+.slider table {
+  width: 70%;
+  height: 60%;
+  border-collapse: collapse;
+}
+.slider td {
+  padding: 30px;
+  text-align: center;
+}
+.social-icon {
+  font-size: 24px;
+  color: white;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  background-color: black;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+.slider tr :hover {
+  transform: scale(1.1);
+}
+.Pnc {
+  text-align: center;
+  color: red;
+  padding: 30px 0 30px 0;
+  font-family: "Forum";
+  font-size: 20px;
+  background-color: rgb(36, 36, 36);
+}
+.pncbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  padding: 100px 0 100px 0;
+}
+.pncbody table {
+  width: 90%;
+  height: 90%;
+text-align: center;
+}
+.pncbody th,td {
+  color: white;
+}
+.pncbody p {
+  font-size: 30px;
+  padding: 50px;
+  font-family: "gafata";
+  letter-spacing: 2px;
+}
+.pncbody h1 {
+  font-size: 50px;
+  font-family: "Forum";
+}
+.works {
+  color: red;
+  background-color: black;
+  padding: 50px;
+  font-size: 25px;
+  font-family: "Forum";
+}
+.workbody {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  text-align: center;
+  background-color: black;
+}
+.workbody i {
+  font-size: 120px;
+}
+.workbody a{
+  color: red;
+}
+.footerhead {
+  height: 50px;
+  background-color: rgb(36, 36, 36);
+}
+.footer {
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(121, 118, 118);
+}
+.content i {
+  font-size: 22px;
+  padding: 10px 10px 10px 10px;
+}
+.content p {
+  font-size: 16px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
