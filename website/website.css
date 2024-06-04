@@ -133,7 +133,7 @@ a {
   font-weight: 50;
 }
 .slider img {
-  width: 200px;
+  width: 400px;
   height: 300px;
   border-radius: 50px;
 }
@@ -153,13 +153,15 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
   box-sizing: border-box;
   color: white;
 }
 
 .navigation {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   display: flex;
   justify-content: space-between;
