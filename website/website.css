@@ -12,37 +12,71 @@ a {
   color: black;
   font-weight: 600;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .head {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row;
   padding: 20px 10px 20px 10px;
   position: fixed;
+  gap: 24px;
   background-color: black;
   z-index: 99;
+  
 }
+
 .head a {
   color: red;
 }
 .head h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-family: "Fredericka the Great";
 }
 .menu {
   display: flex;
   align-items: center;
-  gap: 68px;
+  gap: 44px;
+
 }
-.menu a {
+.hove {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+  position: relative;
+  letter-spacing: 0.1cap;
+}
+.hove a {
   text-decoration: none;
   color: red;
-  font-size: 24px;
+  position: relative;
+  font-size: 20px;
   font-family: "Forum";
   transition: 0.2s;
+  padding-bottom: 5px;
+}
+.hove a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 40px;
+
+  transition: 0.3s;
+}
+.hove a:hover::after {
+  height: 3px;
+  width: 100%;
+  background-color: white;
 }
 .menu a:hover {
-  color: lightblue;
+  color: lightgray;
 }
 .sidebar {
   position: fixed;
