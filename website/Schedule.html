@@ -25,6 +25,12 @@
             font-weight: 600;
         }
 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         .head {
             width: 100%;
             display: flex;
@@ -52,12 +58,39 @@
             gap: 68px;
         }
 
-        .menu a {
+        .hove {
+            display: flex;
+            align-items: center;
+            gap: 68px;
+            position: relative;
+            letter-spacing: 0.1cap;
+        }
+
+        .hove a {
             text-decoration: none;
             color: red;
-            font-size: 24px;
+            position: relative;
+            font-size: 20px;
             font-family: "Forum";
             transition: 0.2s;
+            padding-bottom: 5px;
+        }
+
+        .hove a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 40px;
+
+            transition: 0.3s;
+        }
+
+        .hove a:hover::after {
+            height: 3px;
+            width: 100%;
+            background-color: white;
         }
 
         .menu a:hover {
@@ -226,25 +259,32 @@
 
 <body>
     <div class="head">
-        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><a href="">EDPROG</a></h1>
+        <div class="logo">
+            <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><a href="">EDPROG</a></h1>
+        </div>
         <div class="menu" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
-            <a class="hideOnMobile" href="portfolio.html">Home</a>
-            <a class="hideOnMobile" href="portfolio.html">About</a>
-            <a class="hideOnMobile" href="portfolio.html">PnC</a>
-            <a class="hideOnMobile" href="portfolio.html">Works</a>
-            <a class="hideOnMobile" href="Schedule.html">Schedule</a>
-        </div>
-        <div class="sidebar">
-            <img onclick="hideSidebar()"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMFJREFUSEvtlNEJwzAMRC+btJukm3SVTtJukozSUcqDBoJrS2eC6U8MIZgo9ySd5UmD1zRYXycg7fDfW3SX9ArSvEiao5ioAsSfkt6SrhUI4nzn/WhBIgA/Ll+BErKJk/0q6daqMvOgBrHFgWYAYkoI1aSZbxU5gBLCPmzLvl09AAwlc1bL+B8rHEDZc/Y8FiQD1AyNTldXBdFpsSHOoLUM3UOYA+K6KiDYuSoAVcXdOUhvzCggM/mQ+FmB1b7hHnwAC+InGed+jX8AAAAASUVORK5CYII=" />
-            <a onclick="hideSidebar()" href="portfolio.html">Home</a>
-            <a onclick="hideSidebar()" href="portfolio.html">About</a>
-            <a onclick="hideSidebar()" href="portfolio.html">Pnc</a>
-            <a onclick="hideSidebar()" href="portfolio.html">Works</a>
-            <a onclick="hideSidebar()" href="Schedule.html">Schedule</a>
-        </div>
-        <div class="icons">
-            <h3 class="hideOnPc"><i onclick="showSidebar()" class="bx bx-menu"></i></h3>
+
+            <div class="hove">
+
+                <a class="hideOnMobile" href="portfolio.html">Home</a>
+                <a class="hideOnMobile" href="portfolio.html">About</a>
+                <a class="hideOnMobile" href="portfolio.html">PnC</a>
+                <a class="hideOnMobile" href="portfolio.html">Works</a>
+                <a class="hideOnMobile" href="Schedule.html">Schedule</a>
+            </div>
+
+            <div class="sidebar">
+                <img onclick="hideSidebar()"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMFJREFUSEvtlNEJwzAMRC+btJukm3SVTtJukozSUcqDBoJrS2eC6U8MIZgo9ySd5UmD1zRYXycg7fDfW3SX9ArSvEiao5ioAsSfkt6SrhUI4nzn/WhBIgA/Ll+BErKJk/0q6daqMvOgBrHFgWYAYkoI1aSZbxU5gBLCPmzLvl09AAwlc1bL+B8rHEDZc/Y8FiQD1AyNTldXBdFpsSHOoLUM3UOYA+K6KiDYuSoAVcXdOUhvzCggM/mQ+FmB1b7hHnwAC+InGed+jX8AAAAASUVORK5CYII=" />
+                <a onclick="hideSidebar()" href="portfolio.html">Home</a>
+                <a onclick="hideSidebar()" href="portfolio.html">About</a>
+                <a onclick="hideSidebar()" href="portfolio.html">Pnc</a>
+                <a onclick="hideSidebar()" href="portfolio.html">Works</a>
+                <a onclick="hideSidebar()" href="Schedule.html">Schedule</a>
+            </div>
+            <div class="icons">
+                <h3 class="hideOnPc"><i onclick="showSidebar()" class="bx bx-menu"></i></h3>
+            </div>
         </div>
     </div>
 
