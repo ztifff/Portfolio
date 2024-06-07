@@ -119,6 +119,11 @@ a {
 .sidebar a:hover {
   background-color: gray;
 }
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .icons i{
   color: var(--secondary-color-red);
 }
@@ -347,6 +352,9 @@ text-align: center;
   .container img {
     width: 100px;
     height: 100px;
+  }
+  #icon {
+    width: 25px;
   }
 .carousel {
 height: 200px;
