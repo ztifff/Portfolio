@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finals</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Gafata&family=Forum&family=Fredericka+the+Great&family=Fugaz+One&display=swap");
 
@@ -61,6 +63,40 @@
             color: lightblue;
         }
 
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .sidebar a {
+            padding: 10px 10px 40px 10px;
+            width: 100%;
+            transition: 0.4s;
+        }
+
+        .sidebar img {
+            padding: 10px 10px 40px 10px;
+            width: 10%;
+        }
+
+        .sidebar a:hover {
+            background-color: gray;
+        }
+
+        .icons i {
+            color: red;
+        }
+
         .title {
             padding: 120px 0 30px 20px;
 
@@ -110,18 +146,60 @@
         body {
             background-color: #f5f5f5;
         }
+
+        @media (max-width: 800px) {
+            .hideOnMobile {
+                display: none;
+            }
+
+            .title h1 {
+                font-size: 16px;
+            }
+
+            .output img {
+                width: 300px;
+                height: 200px;
+            }
+
+            .title1 h1 {
+                font-size: 16px;
+            }
+
+            .output1 img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .hideOnPc {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="head">
-        <h1><a href="">EDPROG</a></h1>
-        <div class="menu">
-            <a href="portfolio.html">Home</a>
-            <a href="portfolio.html">About</a>
-            <a href="portfolio.html">PnC</a>
-            <a href="portfolio.html">Works</a>
-            <a href="Schedule.html">Schedule</a>
+        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><a href="">EDPROG</a></h1>
+        <div class="menu" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
+            <a class="hideOnMobile" href="portfolio.html">Home</a>
+            <a class="hideOnMobile" href="portfolio.html">About</a>
+            <a class="hideOnMobile" href="portfolio.html">PnC</a>
+            <a class="hideOnMobile" href="portfolio.html">Works</a>
+            <a class="hideOnMobile" href="Schedule.html">Schedule</a>
+        </div>
+        <div class="sidebar">
+            <img onclick="hideSidebar()"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMFJREFUSEvtlNEJwzAMRC+btJukm3SVTtJukozSUcqDBoJrS2eC6U8MIZgo9ySd5UmD1zRYXycg7fDfW3SX9ArSvEiao5ioAsSfkt6SrhUI4nzn/WhBIgA/Ll+BErKJk/0q6daqMvOgBrHFgWYAYkoI1aSZbxU5gBLCPmzLvl09AAwlc1bL+B8rHEDZc/Y8FiQD1AyNTldXBdFpsSHOoLUM3UOYA+K6KiDYuSoAVcXdOUhvzCggM/mQ+FmB1b7hHnwAC+InGed+jX8AAAAASUVORK5CYII=" />
+            <a onclick="hideSidebar()" href="portfolio.html">Home</a>
+            <a onclick="hideSidebar()" href="portfolio.html">About</a>
+            <a onclick="hideSidebar()" href="portfolio.html">Pnc</a>
+            <a onclick="hideSidebar()" href="portfolio.html">Works</a>
+            <a onclick="hideSidebar()" href="Schedule.html">Schedule</a>
+        </div>
+        <div class="icons">
+            <h3 class="hideOnPc"><i onclick="showSidebar()" class="bx bx-menu"></i></h3>
         </div>
     </div>
     <div class="title">
@@ -148,6 +226,11 @@
                 src="wireframe100.png" alt=""></a>
 
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="portfolio.js"></script>
 </body>
 
 </html>

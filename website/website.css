@@ -12,37 +12,100 @@ a {
   color: black;
   font-weight: 600;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .head {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row;
   padding: 20px 10px 20px 10px;
   position: fixed;
+  gap: 24px;
   background-color: black;
   z-index: 99;
+  
 }
+
 .head a {
   color: red;
 }
 .head h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-family: "Fredericka the Great";
 }
 .menu {
   display: flex;
   align-items: center;
-  gap: 68px;
+  gap: 44px;
+
 }
-.menu a {
+.hove {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+  position: relative;
+  letter-spacing: 0.1cap;
+}
+.hove a {
   text-decoration: none;
   color: red;
-  font-size: 24px;
+  position: relative;
+  font-size: 20px;
   font-family: "Forum";
   transition: 0.2s;
+  padding-bottom: 5px;
+}
+.hove a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 40px;
+
+  transition: 0.3s;
+}
+.hove a:hover::after {
+  height: 3px;
+  width: 100%;
+  background-color: white;
 }
 .menu a:hover {
-  color: lightblue;
+  color: lightgray;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar a{
+  padding: 10px 10px 40px 10px;
+  width: 100%;
+  transition: 0.4s;
+}
+.sidebar img {
+  padding: 10px 10px 40px 10px;
+  width: 10%;
+}
+.sidebar a:hover {
+  background-color: gray;
+}
+.icons i{
+  color: red;
 }
 .container {
   padding: 285px 30px 285px 30px;
@@ -65,8 +128,7 @@ a {
   height: 345px;
   width: 345px;
   border-radius: 200px;
-  border: 5px solid red;
-  box-shadow: 14px 14px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid red;
 }
 #aboutus {
   background-color: rgb(36, 36, 36) ;
@@ -91,7 +153,7 @@ a {
   flex-basis: 100%;
   display: flex;
   background-color: rgba(58, 57, 57, 1);
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
 }
@@ -104,7 +166,7 @@ a {
   font-weight: 50;
 }
 .slider img {
-  width: 200px;
+  width: 400px;
   height: 300px;
   border-radius: 50px;
 }
@@ -124,13 +186,16 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
   box-sizing: border-box;
   color: white;
+  overflow: hidden;
 }
 
 .navigation {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -232,11 +297,13 @@ text-align: center;
 }
 .footer {
   padding: 10px 20px 10px 20px;
-  background-color: rgb(121, 118, 118);
+  background-color: rgba(58, 57, 57, 1);
+  color: white;
 }
 .content i {
   font-size: 22px;
   padding: 10px 10px 10px 10px;
+  color: white;
 }
 .content p {
   font-size: 16px;
@@ -245,4 +312,99 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .container {
+    padding: 100px 0px 100px 0px;
+    gap: 0;
+  }
+  .container h3 {
+    font-size: 12px;
+  }
+  .container img {
+    width: 100px;
+    height: 100px;
+  }
+.carousel {
+height: 200px;
+}
+.slider h1 {
+  font-size: 24px;
+}
+.slider img {
+  width: 100px;
+  height: 100px;
+}
+.slider video {
+  width: 100px;
+  height: 100px;
+}
+.navigation {
+  top: 40%;
+}
+.arrow {
+  font-size: 30px;
+}
+.aboutme, .aboutme2, .aboutme3 {
+font-size: 9px;
+width: 200px;
+  height: 150px;
+  padding: 0;
+}
+.slider table {
+  width: 100px;
+  height: 100px;
+}
+.slider td {
+  padding: 5px;
+}
+.social-icon {
+  padding: 10px;
+  font-size: 10px;
+}
+.Pnc h1 {
+  font-size: 16px;
+}
+.pncbody {
+  padding: 40px 0 20px 0;
+}
+.pncbody table {
+  width: 0;
+  height: 0;
+}
+.pncbody h1{
+  font-size: 36px;
+}
+.pncbody p{
+font-size: 16px;
+}
+.works {
+  padding: 30px 10px 30px 10px;
+}
+.works h1{
+  font-size: 24px;
+}
+.workbody {
+  height: 200px;
+}
+.workbody i{
+  font-size: 44px;
+}
+.workbody h1 {
+  font-size: 24px;
+}
+.footer p{
+  font-size: 12px;
+}
+.footer i {
+  font-size: 14px;
+}
+}
+@media (min-width: 1280px) {
+  .hideOnPc {
+    display: none;
+  }
 }
