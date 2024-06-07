@@ -23,11 +23,14 @@ rightArrow.addEventListener('click', function () {
 });
 
 var icon = document.getElementById("icon");
+var edu = document.getElementById("edu");
 icon.onclick = function () {
     document.body.classList.toggle("lightmode");
     if (document.body.classList.contains("lightmode")) {
         icon.src = "moon.png";
+        edu.src = "edu (1).jpg";
     } else {
         icon.src = "sun.png";
+        edu.src = "edu (2).jpg";
     }
 }
