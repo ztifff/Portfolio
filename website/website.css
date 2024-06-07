@@ -7,9 +7,24 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --primary-color: rgb(36, 36, 36);
+  --secondary-color-about: rgba(58, 57, 57, 1);
+  --secondary-color-black: black; 
+  --secondary-color-red: red; 
+  --secondary-color-white: white; 
+  
+}
+.lightmode {
+  --primary-color: #f5f5f5;
+  --secondary-color-black: white; 
+  --secondary-color-red: blue; 
+  --secondary-color-white: black;
+  --secondary-color-about: rgb(121, 118, 118);
+}
 a {
   text-decoration: none;
-  color: black;
+  color: var(--primary-color);
   font-weight: 600;
 }
 .logo {
@@ -26,13 +41,13 @@ a {
   padding: 20px 10px 20px 10px;
   position: fixed;
   gap: 24px;
-  background-color: black;
+  background-color: var(--secondary-color-black);
   z-index: 99;
   
 }
 
 .head a {
-  color: red;
+  color: var(--secondary-color-red);
 }
 .head h1 {
   font-size: 30px;
@@ -53,7 +68,7 @@ a {
 }
 .hove a {
   text-decoration: none;
-  color: red;
+  color: var(--secondary-color-red);
   position: relative;
   font-size: 20px;
   font-family: "Forum";
@@ -73,10 +88,10 @@ a {
 .hove a:hover::after {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: var(--secondary-color-white);
 }
 .menu a:hover {
-  color: lightgray;
+  color: var(--secondary-color-white);
 }
 .sidebar {
   position: fixed;
@@ -105,7 +120,11 @@ a {
   background-color: gray;
 }
 .icons i{
-  color: red;
+  color: var(--secondary-color-red);
+}
+#icon {
+  width: 30px;
+  cursor: pointer;
 }
 .container {
   padding: 285px 30px 285px 30px;
@@ -113,8 +132,8 @@ a {
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
-  color: white;
-  background-color: rgb(36, 36, 36);
+  color: var(--secondary-color-white);
+  background-color: var(--primary-color);
 }
 .left h3 {
   font-size: 40px;
@@ -122,16 +141,13 @@ a {
   font-family: "Fugaz One";
 }
 .left span {
-  color: red;
+  color: var(--secondary-color-red);
 }
 .right img {
   height: 345px;
   width: 345px;
   border-radius: 200px;
-  border: 2px solid red;
-}
-#aboutus {
-  background-color: rgb(36, 36, 36) ;
+  border: 2px solid var(--secondary-color-red);
 }
 .slides {
   width: 100%;
@@ -160,7 +176,7 @@ a {
 .slider h1 {
   position: absolute;
   top: 0;
-  color: red;
+  color: var(--secondary-color-red);
   font-family: "Forum";
   font-size: 44px;
   font-weight: 50;
@@ -189,8 +205,12 @@ a {
   font-size: 18px;
   letter-spacing: 1px;
   box-sizing: border-box;
-  color: white;
+  color: var(--secondary-color-white);
   overflow: hidden;
+}
+.aboutme p,
+.aboutme2 p {
+  color: var(--secondary-color-black);
 }
 
 .navigation {
@@ -205,7 +225,7 @@ a {
   background: none;
   border: none;
   cursor: pointer;
-  color: red;
+  color: var(--secondary-color-red);
   font-size: 60px;
 }
 .arrow.left {
@@ -225,12 +245,12 @@ a {
 }
 .social-icon {
   font-size: 24px;
-  color: white;
+  color: var(--secondary-color-white);
   padding: 30px 30px 30px 30px;
   display: flex;
   align-items: center ;
   justify-content: space-between;
-  background-color: black;
+  background-color: var(--secondary-color-black);
   transition: 0.2s;
   transition-timing-function: ease-in;
 }
@@ -239,17 +259,17 @@ a {
 }
 .Pnc {
   text-align: center;
-  color: red;
+  color: var(--secondary-color-red);
   padding: 30px 0 30px 0;
   font-family: "Forum";
   font-size: 20px;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--primary-color);
 }
 .pncbody {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--primary-color);
   padding: 100px 0 100px 0;
 }
 .pncbody table {
@@ -258,7 +278,7 @@ a {
 text-align: center;
 }
 .pncbody th,td {
-  color: white;
+  color: var(--secondary-color-white);
 }
 .pncbody p {
   font-size: 30px;
@@ -271,8 +291,8 @@ text-align: center;
   font-family: "Forum";
 }
 .works {
-  color: red;
-  background-color: black;
+  color: var(--secondary-color-red);
+  background-color: var(--secondary-color-black);
   padding: 50px;
   font-size: 25px;
   font-family: "Forum";
@@ -283,27 +303,27 @@ text-align: center;
   justify-content: space-around;
   height: 400px;
   text-align: center;
-  background-color: black;
+  background-color: var(--secondary-color-black);
 }
 .workbody i {
   font-size: 120px;
 }
 .workbody a{
-  color: red;
+  color: var(--secondary-color-red);
 }
 .footerhead {
   height: 50px;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--primary-color);
 }
 .footer {
   padding: 10px 20px 10px 20px;
-  background-color: rgba(58, 57, 57, 1);
-  color: white;
+  background-color: var(--secondary-color-about);
+  color: var(--secondary-color-white);
 }
 .content i {
   font-size: 22px;
   padding: 10px 10px 10px 10px;
-  color: white;
+  color: var(--secondary-color-white);
 }
 .content p {
   font-size: 16px;

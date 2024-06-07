@@ -21,3 +21,13 @@ rightArrow.addEventListener('click', function () {
     sectionIndex = (sectionIndex < 2) ? sectionIndex + 1 : 0;
     slider.style.transform = 'translate(' + (sectionIndex) * -33.33 + '%)';
 });
+
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("lightmode");
+    if (document.body.classList.contains("lightmode")) {
+        icon.src = "moon.png";
+    } else {
+        icon.src = "sun.png";
+    }
+}
