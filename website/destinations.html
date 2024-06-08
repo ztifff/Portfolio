@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="destinations.css" />
+</head>
+
+<body>
+  <div class="head">
+    <div class="logo" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <i class="bx bxs-paper-plane"></i>
+      <a href="TravelTrove.html">Traveller</a>
+    </div>
+
+    <div class="menu" id="open" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
+      <div class="hove">
+        <a class="hideOnMobile" href="TravelTrove.html">Home</a>
+
+        <div class="activated">
+          <a class="hideOnMobile" href="destinations.html">Destinations</a>
+        </div>
+
+        <a class="hideOnMobile" href="about.html">About</a>
+      </div>
+      <div class="sidebar">
+        <a onclick="hideSidebar()" href="#"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMFJREFUSEvtlNEJwzAMRC+btJukm3SVTtJukozSUcqDBoJrS2eC6U8MIZgo9ySd5UmD1zRYXycg7fDfW3SX9ArSvEiao5ioAsSfkt6SrhUI4nzn/WhBIgA/Ll+BErKJk/0q6daqMvOgBrHFgWYAYkoI1aSZbxU5gBLCPmzLvl09AAwlc1bL+B8rHEDZc/Y8FiQD1AyNTldXBdFpsSHOoLUM3UOYA+K6KiDYuSoAVcXdOUhvzCggM/mQ+FmB1b7hHnwAC+InGed+jX8AAAAASUVORK5CYII=" /></a>
+        <a class="active" href="TravelTrove.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="icons">
+        <a href="login.html"><i class="bx bxs-user-circle"></i></a>
+        <a href=""><i class="bx bxl-instagram-alt"></i></a>
+        <a class="hideOnPc" onclick="showSidebar()" href="#"><i class="bx bx-menu"></i></a>
+      </div>
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "flex";
+        }
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "none";
+        }
+      </script>
+    </div>
+  </div>
+  <div class="container">
+    <div class="headcontainer">
+      <h1 data-aos="fade-left" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+        Our Destinations
+      </h1>
+      <p data-aos="fade-right" data-aos-duration="700" data-aos-once="false" data-aos-easing="ease-in-out">
+        My standard packages are below. If the length of your trip or number
+        of destinations sits outside of these, let’s chat.
+      </p>
+    </div>
+    <div class="destinations">
+      <table data-aos="fade-down" data-aos-duration="1000" data-aos-once="false" data-aos-easing="ease-in-out"
+        data-aos-delay="50">
+        <tr>
+          <td>
+            <div class="place1">
+              <img src="Dubai_Skylines_at_night_(Pexels_3787839).jpg" alt="" />
+              <h1>Dubai, United Arab</h1>
+              <p>
+                Burj Khalifa. Burj Khalifa in Dubai holds seven world records,
+                including the tallest building in the world, at 2,716 feet tall.
+              </p>
+              <div class="star1">
+                <i class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i>
+                <p>$900</p>
+              </div>
+              <div class="book1" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+                data-aos-easing="ease-in-out" data-aos-delay="50">
+                <a href="login.html">
+                  <h3>Book Now</h3>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="place2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+              data-aos-easing="ease-in-out" data-aos-delay="150">
+              <img src="new york.jfif" alt="" />
+              <h1>New York, USA</h1>
+              <p>
+                No other city in the world offers the frenetic energy of New York
+                City. It's filled with the world's best shopping and dining, along
+                with incredible museums.
+              </p>
+              <div class="star2">
+                <i class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i>
+                <p>$700</p>
+              </div>
+              <div class="book2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+                data-aos-easing="ease-in-out" data-aos-delay="150">
+                <a href="login.html">
+                  <h3>Book Now</h3>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="place3" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+              data-aos-easing="ease-in-out" data-aos-delay="200">
+              <img src="GREAT-BARRIER-REEF.jpg" alt="" />
+              <h1>Barrier Reef, Australia</h1>
+              <p>
+                The Great Barrier Reef is a World Heritage-listed natural wonder and
+                one of the largest living structures on the planet that can be seen
+                from outer space.
+              </p>
+              <div class="star3">
+                <i class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bx-star' style='color:#daa520'></i>
+                <p>$920</p>
+              </div>
+              <div class="book3" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+                data-aos-easing="ease-in-out" data-aos-delay="200">
+                <a href="login.html">
+                  <h3>Book Now</h3>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="place4" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+              data-aos-easing="ease-in-out" data-aos-delay="250">
+              <img src="nigaria falls.jpg" alt="" />
+              <h1>Niagara Falls, Canada</h1>
+              <p>
+                With about 30 million visitors a year, Niagara Falls is one of the
+                most popular waterfalls in the world.
+              </p>
+              <div class="star4">
+                <i class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bx-star' style='color:#daa520'></i>
+                <p>$850</p>
+              </div>
+              <div class="book4" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+                data-aos-easing="ease-in-out" data-aos-delay="250">
+                <a href="login.html">
+                  <h3>Book Now</h3>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="place5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+              data-aos-easing="ease-in-out" data-aos-delay="300">
+              <img src="taj mahal.jfif" alt="" />
+              <h1>Taj Mahal, India</h1>
+              <p>
+                The Taj Mahal is an ivory-white marble mausoleum on the right bank
+                of the river Yamuna in Agra, Uttar Pradesh, India.
+              </p>
+              <div class="star5">
+                <i class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i><i class='bx bx-star' style='color:#daa520'></i><i
+                  class='bx bx-star' style='color:#daa520'></i>
+                <p>$760</p>
+              </div>
+              <div class="book5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+                data-aos-easing="ease-in-out" data-aos-delay="300">
+                <a href="login.html">
+                  <h3>Book Now</h3>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="place6" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+              data-aos-easing="ease-in-out" data-aos-delay="350">
+              <img src="LA.webp" alt="" />
+              <h1>Los Angeles, California</h1>
+              <p>
+                Los Angeles is a sprawling Southern California city and the center
+                of the nation’s film and television industry.
+              </p>
+              <div class="star6">
+                <i class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bxs-star' style='color:#daa520'></i><i class='bx bxs-star' style='color:#daa520'></i><i
+                  class='bx bx-star' style='color:#daa520'></i>
+                <p>$960</p>
+              </div>
+              <div class="book6" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false"
+                data-aos-easing="ease-in-out" data-aos-delay="350">
+                <a href="login.html">
+                  <h3>Book Now</h3>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer">
+      <div class="content">
+        <p>
+          2024 © All Rights Reserved | Designed and Developed by
+          Travellers.inc | Contact us: 09914810919
+        </p>
+        <div class="footericons">
+          <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
