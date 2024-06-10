@@ -7,7 +7,7 @@
 }
 body {
   overflow-x: hidden;
-  background: url(https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D);
+  background: url(https://krystalfamilyclinic.com/wp-content/uploads/2022/07/traveling.jpg);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -120,11 +120,11 @@ a {
 .sidebar a:hover {
   background-color: gray;
 }
-.logincard {
+.regiscard {
   position: fixed;
   inset: 0px;
   width: 25rem;
-  height: 5rem;
+  height: 35rem;
   max-width: 100vw;
   max-height: 100dvh;
   margin: auto;
@@ -133,12 +133,31 @@ a {
   background: transparent;
   backdrop-filter: blur(10px);
 }
-.logincard h1 {
+.regiscard h1 {
   text-align: center;
   margin-bottom: 20px;
   color: white;
   font-size: 36px;
 }
+.email input {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid white;
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    background: transparent;
+  }
+  .email input::placeholder {
+    color: black;
+  }
+  .email i {
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+  }
 .user input {
   margin-bottom: 25px;
   width: 100%;
@@ -177,31 +196,24 @@ a {
   right: 20px;
   margin-top: 10px;
 }
-.rememberforgot {
+.gender {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
   margin-bottom: 30px;
+  gap: 15px;
 }
-.rememberforgot label {
+.gender label {
   display: flex;
   gap: 10px;
   font-size: 14px;
-}
-.rememberforgot a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-}
-.rememberforgot a:hover {
-  text-decoration: underline;
 }
 .btn {
   font-size: 20px;
   padding: 10px 30px 10px 30px;
   width: 100%;
   border-radius: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: none;
   border: 1px solid white;
   cursor: pointer;
@@ -212,12 +224,42 @@ a {
 .btn:hover {
   background: transparent;
 }
-.register {
+.or h2 {
+    text-align: center;
+    color: white;
+}
+.socmed {
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    transition: 0.3s;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .socmed:hover {
+    background: transparent;
+  }
+.terms {
   text-align: center;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 15px;
+  
 }
-.register a:hover {
-  text-decoration: underline;
+.terms label {
+    display: flex;
+    gap: 15px;
 }
 @media (max-width: 800px) {
   .hideOnMobile {

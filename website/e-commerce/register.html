@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <i class="bx bxs-paper-plane"></i>
+                <a href="TravelTrove.html">Traveller</a>
+            </div>
+
+            <div class="menu" id="open" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
+                <div class="hove">
+                    <a class="hideOnMobile" href="TravelTrove.html">Home</a>
+
+                    <a class="hideOnMobile" href="destinations.html">Destinations</a>
+
+                    <a class="hideOnMobile" href="about.html">About</a>
+                </div>
+                <div class="sidebar">
+                    <a onclick="hideSidebar()" href="#"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMFJREFUSEvtlNEJwzAMRC+btJukm3SVTtJukozSUcqDBoJrS2eC6U8MIZgo9ySd5UmD1zRYXycg7fDfW3SX9ArSvEiao5ioAsSfkt6SrhUI4nzn/WhBIgA/Ll+BErKJk/0q6daqMvOgBrHFgWYAYkoI1aSZbxU5gBLCPmzLvl09AAwlc1bL+B8rHEDZc/Y8FiQD1AyNTldXBdFpsSHOoLUM3UOYA+K6KiDYuSoAVcXdOUhvzCggM/mQ+FmB1b7hHnwAC+InGed+jX8AAAAASUVORK5CYII=" /></a>
+                    <a class="active" href="TravelTrove.html">Home</a>
+                    <a href="destinations.html">Destinations</a>
+                    <a href="">About</a>
+                </div>
+                <div class="icons">
+                    <a href="login.html"><i class="bx bxs-user-circle"></i></a>
+                    <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                    <a class="hideOnPc" onclick="showSidebar()" href="#"><i class="bx bx-menu"></i></a>
+                </div>
+                <script>
+                    function showSidebar() {
+                        const sidebar = document.querySelector(".sidebar");
+                        sidebar.style.display = "flex";
+                    }
+                    function hideSidebar() {
+                        const sidebar = document.querySelector(".sidebar");
+                        sidebar.style.display = "none";
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="regiscard">
+            <div class="heading">
+                <h1>Register</h1>
+            </div>
+            <div class="email">
+                <input type="text" placeholder="Enter Email" required />
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="user">
+                <input type="text" placeholder="Username" required />
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Password" required />
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="gender">
+                <label> <input type="radio" name="gender" value="male" />Male</label>
+                <label> <input type="radio" name="gender" value="female" />Female</label>
+            </div>
+            <div class="terms">
+                <label> <input type="checkbox">I accept the Terms and Condition</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="or">
+                <h2>or</h2>
+                <button type="submit" class="socmed"><i class='bx bxl-facebook-circle'></i>Facebook</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
